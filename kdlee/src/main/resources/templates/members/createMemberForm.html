@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+<title>Hello</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+        <div class="jumbotron">
+            <form action="/members/new" method="post">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                        <input type="text" id="name" name="name" placeholder="이름을입력하세요">
+                </div>
+                <button type="submit">등록</button>
+                </form>
+            </div> <!-- /container -->
+        </div>
+    </div>
+</body>
+</html>
